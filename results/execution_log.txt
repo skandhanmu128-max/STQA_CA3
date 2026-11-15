@@ -1,0 +1,21 @@
+ID     Scenario                      Exp   Got   Result      ms
+TC01   Register valid patient        201   201   PASS       2.7
+TC02   Age lower boundary            201   201   PASS       2.0
+TC03   Age below minimum             400   400   PASS       1.8
+TC04   Age upper boundary            201   201   PASS       1.8
+TC05   Age above maximum             400   400   PASS       1.8
+TC06   Missing name                  400   400   PASS       1.7
+TC07   Invalid phone length          400   400   PASS       1.9
+TC08   Duplicate email               409   409   PASS       1.6
+SETUP  Register flow patient         201   201   PASS       2.6
+TC09   Book valid appointment        201   201   PASS       6.6
+TC10   Appointment unknown patient   404   404   PASS       1.8
+TC11   Past-date appointment         400   400   PASS       1.9
+TC12   Double-book same slot         409   409   PASS       2.2
+TC13   Add medical record            201   201   PASS       1.9
+TC14   Records unknown patient       404   404   PASS       1.9
+EXTRA  Fetch records for patient     200   200   PASS       1.7
+EXTRA  Delete appointment            200   200   PASS       2.0
+EXTRA  Malformed JSON body           400   400   PASS       1.7
+
+Total 18 | Passed 18 | Failed 0 | Avg 2.2 ms | Max 6.6 ms | Pass rate 100.0%

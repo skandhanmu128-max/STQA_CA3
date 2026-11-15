@@ -1,0 +1,9 @@
+tcid,scenario,name,age,phone,email,expected
+TC01,Register valid patient,Ravi,35,9876543210,ravi@x.com,201
+TC02,Age lower boundary,Asha,0,9876500001,asha@x.com,201
+TC03,Age below minimum,Tom,-1,9876500002,tom@x.com,400
+TC04,Age upper boundary,Mina,120,9876500003,mina@x.com,201
+TC05,Age above maximum,Joe,121,9876500004,joe@x.com,400
+TC06,Missing name,,30,9876500005,noname@x.com,400
+TC07,Invalid phone length,Sam,30,12345,sam@x.com,400
+TC08,Duplicate email,Ravi2,40,9876500006,ravi@x.com,409
