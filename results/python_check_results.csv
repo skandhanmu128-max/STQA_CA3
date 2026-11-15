@@ -1,19 +1,19 @@
 id,scenario,expected,actual,result,ms
-TC01,Register valid patient,201,201,PASS,2.7
-TC02,Age lower boundary,201,201,PASS,2.0
-TC03,Age below minimum,400,400,PASS,1.8
-TC04,Age upper boundary,201,201,PASS,1.8
-TC05,Age above maximum,400,400,PASS,1.8
-TC06,Missing name,400,400,PASS,1.7
-TC07,Invalid phone length,400,400,PASS,1.9
-TC08,Duplicate email,409,409,PASS,1.6
-SETUP,Register flow patient,201,201,PASS,2.6
-TC09,Book valid appointment,201,201,PASS,6.6
-TC10,Appointment unknown patient,404,404,PASS,1.8
-TC11,Past-date appointment,400,400,PASS,1.9
-TC12,Double-book same slot,409,409,PASS,2.2
-TC13,Add medical record,201,201,PASS,1.9
-TC14,Records unknown patient,404,404,PASS,1.9
-EXTRA,Fetch records for patient,200,200,PASS,1.7
-EXTRA,Delete appointment,200,200,PASS,2.0
-EXTRA,Malformed JSON body,400,400,PASS,1.7
+TC01,Register valid patient,201,201,PASS,2068.6
+TC02,Age lower boundary,201,201,PASS,2035.6
+TC03,Age below minimum,400,400,PASS,2074.1
+TC04,Age upper boundary,201,201,PASS,2036.0
+TC05,Age above maximum,400,400,PASS,2058.6
+TC06,Missing name,400,400,PASS,2027.4
+TC07,Invalid phone length,400,400,PASS,2059.2
+TC08,Duplicate email,409,409,PASS,2032.0
+SETUP,Register flow patient,201,201,PASS,2048.3
+TC09,Book valid appointment,201,201,PASS,2047.5
+TC10,Appointment unknown patient,404,404,PASS,2054.9
+TC11,Past-date appointment,400,400,PASS,2046.2
+TC12,Double-book same slot,409,409,PASS,2062.3
+TC13,Add medical record,201,201,PASS,2045.8
+TC14,Records unknown patient,404,404,PASS,2040.3
+EXTRA,Fetch records for patient,200,200,PASS,2052.2
+EXTRA,Delete appointment,200,200,PASS,2030.0
+EXTRA,Malformed JSON body,400,400,PASS,2071.2
